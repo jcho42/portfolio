@@ -1,3 +1,4 @@
+
 {
   // https://eslint.org/docs/user-guide/configuring#specifying-environments
   "env": {
@@ -8,8 +9,10 @@
   "parser": "babel-eslint",
   "rules": {
     // https://eslint.org/docs/2.0.0/rules/strict
-    "strict": 0
+    "strict": 0,
+    "no-unused-vars": "warn"
   },
+  "root": true,
   "settings": {
     "react": {
        "version": "detect"

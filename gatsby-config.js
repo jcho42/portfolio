@@ -1,13 +1,14 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
+/* eslint-disable camelcase */
+const resolveConfig = require('tailwindcss/resolveConfig');
+const tailwindConfig = require('./tailwind.config.js');
 
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Jason Cho`,
+    description: `Jason's web developer portfolio.`,
+    author: `@jcho42`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -15,11 +16,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `Jason Cho`,
+        short_name: `jcho`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.teal['400'],
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },

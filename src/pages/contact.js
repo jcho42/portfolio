@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layouts/layout';
+import Seo from '../components/layouts/seo';
 
 function ContactPage() {
   return (
     <Layout>
-      <SEO
+      <Seo
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Contact"
       />
