@@ -1,5 +1,22 @@
 /*! purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
 /*! purgecss end ignore */
 @tailwind utilities;
+
+.btn {
+  @apply bg-primary-default rounded text-white;
+}
+
+.btn:hover {
+  @apply bg-primary-darker;
+}
+
+.section-offset {
+  @apply text-center mb-20 pt-80 -mt-80 md:pt-24 md:-mt-24;
+}
+
+.section-underline {
+  @apply border-t-4 border-blueGray-700 w-16 mx-auto mt-4 mb-16;
+}

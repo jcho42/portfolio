@@ -10,13 +10,11 @@ module.exports = {
           lighter: 'hsl(207, 73%, 52%)',
           default: 'hsl(207, 73%, 57%)',
           darker: 'hsl(207, 73%, 44%)'
-        }
+        },
+        teal: colors.teal,
+        blueGray: colors.blueGray,
       }
     },
-    colors: {
-      teal: colors.teal,
-      blue: colors.lightBlue
-    }
   },
   variants: {},
   // https://github.com/tailwindcss/custom-forms

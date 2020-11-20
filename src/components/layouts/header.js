@@ -5,7 +5,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-teal-700 sticky top-0">
+    <header className="bg-blueGray-700 sticky top-0">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <AnchorLink href="#home">
           <h1 className="flex items-center text-white no-underline">
