@@ -4,7 +4,7 @@ import catAndHumanIllustration from '../../images/cat-and-human-illustration.svg
 
 export default function About() {
   return (
-    <section className="text-center" id="about">
+    <section className="text-center pt-64 -mt-64 md:pt-24 md:-mt-24" id="about">
       <img
         alt="Cat and human sitting on a couch"
         className="block w-1/2 mx-auto mb-8"

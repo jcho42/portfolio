@@ -70,8 +70,8 @@ function Header() {
               className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               href={link.route}
-              offset="100"
-              onClick={() => toggleExpansion(!isExpanded)}
+              // offset="100"
+              onClick={() => toggleExpansion(false)}
             >
               {link.title}
             </AnchorLink>
