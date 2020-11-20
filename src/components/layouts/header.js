@@ -5,7 +5,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-teal-700">
+    <header className="bg-teal-700 sticky top-0">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
         <AnchorLink href="#home">
           <h1 className="flex items-center text-white no-underline">
@@ -70,6 +70,8 @@ function Header() {
               className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               href={link.route}
+              offset="100"
+              onClick={() => toggleExpansion(!isExpanded)}
             >
               {link.title}
             </AnchorLink>
