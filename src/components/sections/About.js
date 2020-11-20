@@ -1,15 +1,13 @@
 import React from 'react';
 
 import catAndHumanIllustration from '../../images/cat-and-human-illustration.svg';
+import SectionTitle from '../layouts/sectionTitle'
 
 export default function About() {
   return (
     <section className="section-offset" id="about">
       <div>
-        <h2 className="text-4xl md:text-5xl text-blueGray-700">
-          About
-        </h2>
-        <div className="section-underline" ></div>
+        <SectionTitle>About</SectionTitle>
         <img
           alt="Cat and human sitting on a couch"
           className="block w-1/2 mx-auto mb-8"
