@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="bg-teal-700">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
-        <AnchorLink href="#home2">
+        <AnchorLink href="#home">
           <h1 className="flex items-center text-white no-underline">
             <svg
               className="w-8 h-8 mr-2 fill-current"
