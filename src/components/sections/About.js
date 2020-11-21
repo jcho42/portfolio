@@ -8,7 +8,7 @@ export default function About() {
     <section className="section-offset" id="about">
       <div className="px-4 py-8 md:px-8 md:py-16">
         <SectionTitle>About</SectionTitle>
-        <div className="flex">
+        <div className="md:flex">
           <div className="flex-1 px-16">
             <img
               alt="Cat and human sitting on a couch"

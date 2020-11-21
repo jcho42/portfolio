@@ -8,7 +8,7 @@ export default function SkillCard({ icon, skill, description }) {
         <h2 className="p-3 m-4 text-2xl font-bold bg-yellow-400">{icon}</h2>
       </div>
       <div>
-        <h4 className="text-xl md:text-2xl text-blueGray-700">{skill}</h4>
+        <h4 className="text-h4">{skill}</h4>
         <p>{description}</p>
       </div>
     </div>

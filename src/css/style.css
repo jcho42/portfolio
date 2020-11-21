@@ -5,6 +5,10 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
+.text-h4 {
+  @apply text-xl md:text-2xl text-blueGray-700;
+}
+
 .btn {
   @apply bg-primary-default rounded text-white;
 }
