@@ -13,6 +13,10 @@ module.exports = {
         },
         teal: colors.teal,
         blueGray: colors.blueGray,
+      },
+      flex: {
+       '2': '2 2 0%',
+       '1/3': '1 1 30%'
       }
     },
   },
