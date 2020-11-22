@@ -15,7 +15,8 @@
     "react": "16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "16.14.0",
-    "react-helmet": "6.1.0"
+    "react-helmet": "6.1.0",
+    "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "keywords": [
     "gatsby",
@@ -52,7 +53,8 @@
     "prettier": "2.1.2",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^2.0.1",
+    "tailwindcss-pseudo-elements": "^1.4.1"
   },
   "repository": {
     "type": "git",
