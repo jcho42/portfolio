@@ -1,35 +1,41 @@
 import React from 'react';
 
-import catAndHumanIllustration from '../../images/cat-and-human-illustration.svg';
-import SectionTitle from '../layouts/sectionTitle'
+import SectionTitle from '../layouts/sectionTitle';
 
 export default function Contact() {
   return (
     <section className="section-offset" id="contact">
       <div>
         <SectionTitle>Contact</SectionTitle>
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+        <div>Have any question?</div>
+        <form className="flex flex-col w-120 mx-auto text-gray-200">
+          <input
+            className="px-3 py-2 mb-0.5 bg-gray-800"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            className="px-3 py-2 mb-0.5 bg-gray-800"
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+          <textarea
+            className="px-3 py-2 mb-1 h-32 bg-gray-800"
+            type="text"
+            name="message"
+            placeholder="Your message"
+          ></textarea>
+          <div className="flex justify-between">
+            <div>Success message</div>
+            <button className="px-9 py-2 border-2 border-gray-400">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   );

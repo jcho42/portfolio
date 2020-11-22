@@ -7,7 +7,7 @@ export default function Experience() {
     <section className="section-offset" id="experience">
       <div>
         <SectionTitle>Experience</SectionTitle>
-        <div className="timeline-line">
+        <div className="timeline-line py-1">
           {[
             {
               logo: 'logo',

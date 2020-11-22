@@ -26,6 +26,9 @@ module.exports = {
       },
       borderWidth: {
         '20': '20px'
+      },
+      boxShadow: {
+        'timeline': '0px 0px 2px 8px #fff'
       }
     },
   },
