@@ -1,5 +1,5 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'react-scroll';
 import { IconContext } from 'react-icons';
 import { FaBeer } from 'react-icons/fa';
 import { CgChevronDoubleUp } from 'react-icons/cg';
@@ -9,7 +9,7 @@ import SocialIcon from './socialIcon';
 const Footer = () => {
   return (
     <footer className="py-10 bg-gray-500 relative">
-      <AnchorLink href="#home">
+      <Link to="home" spy={true} smooth={true} duration={500}>
         <div className="flex justify-center">
           <div className="bg-orange-600 p-2 cursor-pointer -top-9 absolute">
             <IconContext.Provider value={{ color: 'white', size: '3em' }}>
@@ -17,7 +17,7 @@ const Footer = () => {
             </IconContext.Provider>
           </div>
         </div>
-      </AnchorLink>
+      </Link>
       <nav className="max-w-md p-4 mx-auto text-sm md:p-6">
         <div className="flex justify-center">
           <SocialIcon link="https://github.com/jcho42/portfolio">

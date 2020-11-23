@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
   return (
     <section
-      className="text-center pb-40 pt-80 -mt-80 md:pt-32 md:-mt-32 bg-blueGray-700 relative"
+      className="text-center py-40 bg-blueGray-700 relative"
       id="contact"
     >
       <svg
