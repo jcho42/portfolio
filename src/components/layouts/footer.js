@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="py-10 bg-gray-500 relative">
       <AnchorLink href="#home">
         <div className="flex justify-center">
-          <div className="bg-blueGray-700 p-2 cursor-pointer -top-6 absolute">
+          <div className="bg-orange-600 p-2 cursor-pointer -top-9 absolute">
             <IconContext.Provider value={{ color: 'white', size: '3em' }}>
               <CgChevronDoubleUp />
             </IconContext.Provider>

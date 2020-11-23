@@ -5,8 +5,8 @@ import SectionTitle from '../layouts/sectionTitle'
 
 export default function Projects() {
   return (
-    <section className="section-offset" id="projects">
-      <div>
+    <section className="section-offset bg-gray-100" id="projects">
+      <div className="px-4 py-8 md:px-8 md:py-16">
         <SectionTitle>Projects</SectionTitle>
         <div className="mx-10">
           <div className="text-h4 flex justify-around w-120 mx-auto">

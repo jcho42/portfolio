@@ -15,6 +15,7 @@ module.exports = {
         },
         teal: colors.teal,
         blueGray: colors.blueGray,
+        orange: colors.orange,
       },
       flex: {
        '2': '2 2 0%',

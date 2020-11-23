@@ -21,7 +21,7 @@
 
 /* sections */
 .section-offset {
-  @apply text-center pb-20 pt-80 -mt-80 md:pt-24 md:-mt-24;
+  @apply text-center pb-28 mb-28 pt-80 -mt-80 md:pt-24 md:-mt-24;
 }
 
 .section-underline {

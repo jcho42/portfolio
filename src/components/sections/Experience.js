@@ -5,7 +5,7 @@ import { SectionTitle, ExpCard } from '../layouts';
 export default function Experience() {
   return (
     <section className="section-offset" id="experience">
-      <div>
+      <div className="px-4 py-8 md:px-8 md:py-16">
         <SectionTitle>Experience</SectionTitle>
         <div className="timeline-line py-1">
           {[
