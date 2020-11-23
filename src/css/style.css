@@ -7,7 +7,7 @@
 
 /* text */
 .text-h4 {
-  @apply text-xl md:text-2xl text-blueGray-700;
+  @apply text-lg md:text-2xl text-blueGray-700;
 }
 
 /* buttons */

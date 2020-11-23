@@ -27,7 +27,7 @@ export default function Landing() {
         <div className="lg:w-1/2">
           <img
             alt="Cat and human sitting on a couch"
-            // className="block w-1/2 mx-auto mb-8"
+            className="block w-80 mx-auto mb-8"
             src={catAndHumanIllustration}
           />
         </div>

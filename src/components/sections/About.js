@@ -6,13 +6,13 @@ import { SectionTitle, SkillCard } from '../layouts'
 export default function About() {
   return (
     <section className="section-offset" id="about">
-      <div className="px-4 py-8 md:px-8 md:py-16">
+      <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>About</SectionTitle>
-        <div className="md:flex">
-          <div className="flex-1 px-16">
+        <div className="lg:flex">
+          <div className="flex-1 px-16 mb-12 lg:mb-0">
             <img
               alt="Cat and human sitting on a couch"
-              className="block mx-auto mb-8"
+              className="block w-80 mx-auto mb-10"
               src={catAndHumanIllustration}
             />
             <p className="leading-loose">
@@ -29,7 +29,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex-2">
+          <div className="flex-2 px-16">
             <h3 className="text-3xl md:text-4xl text-blueGray-700">Skills</h3>
             <div className=" flex flex-wrap">
               {[

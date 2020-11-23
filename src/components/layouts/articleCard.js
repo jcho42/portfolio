@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function ArticleCard({link, thumbnail, title, date, description}) {
   return (
-    <div className="w-96">
+    <div className="w-80">
       <a
         href={link}
         target="_blank"
