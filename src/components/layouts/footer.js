@@ -33,7 +33,9 @@ const Footer = () => {
             <FaBeer />
           </SocialIcon>
         </div>
-        <p className="text-white text-center mt-8">Jason Cho &#169;2020</p>
+        <p className="text-white opacity-75 text-center mt-8">
+          Jason Cho <span className="text-orange-600">&#169;2020</span>
+        </p>
       </nav>
     </footer>
   );
