@@ -4,7 +4,7 @@ import catAndHumanIllustration from '../../images/cat-and-human-illustration.svg
 
 export default function ExpCard({logo, title, company, time}) {
   return (
-    <div className="w-120 left-1/3 relative border-2 mx-16 my-10">
+    <div className="md:w-2/3 lg:w-1/2 left-1/10 md:left-1/5 lg:left-1/3 relative border-2 mx-16 my-10">
       <div className="timeline-icon bg-teal-500 flex items-center">
         <img
           alt="Cat and human sitting on a couch"

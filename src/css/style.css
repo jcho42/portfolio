@@ -35,7 +35,7 @@
 
 .timeline-line::after {
   @apply border-l-4 border-solid border-blueGray-700;
-  @apply absolute z-10 top-0 bottom-0 left-1/3 empty-content;
+  @apply absolute z-10 top-0 bottom-0 left-1/10 md:left-1/5 lg:left-1/3 empty-content;
 }
 
 .timeline-icon::before {
