@@ -17,6 +17,9 @@ module.exports = {
         blueGray: colors.blueGray,
         orange: colors.orange,
       },
+      backgroundImage: theme => ({
+        'black-hole': "url('../images/blackhole_interstellar_dark_mid_sat.png')"
+      }),
       flex: {
        '2': '2 2 0%',
        '1/3': '1 1 30%',
