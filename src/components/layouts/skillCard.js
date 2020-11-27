@@ -5,7 +5,7 @@ import SkillIcon from './skillIcon';
 
 export default function SkillCard({ icon, skill, description }) {
   return (
-    <div className="flex-1/2 sm:p-8">
+    <div className="flex-1/2 pb-5 sm:p-8">
       <div className="flex justify-center">
         <SkillIcon>{icon}</SkillIcon>
       </div>
