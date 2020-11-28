@@ -12,11 +12,8 @@ export default function ProjectCard({
   deployed,
 }) {
   return (
-    <div className="md:max-w-md md:flex-1/2 lg:flex-1/3">
-      <div
-        className={`md:h-80 bg-contain bg-no-repeat bg-${picture}`}
-      ></div>
-      <div className="hidden hover:block">
+    <div className={`md:max-w-md md:flex-1/2 lg:flex-1/3 bg-${picture}  bg-contain bg-no-repeat hover:bg-none`}>
+      <div className="h-80 opacity-0 hover:opacity-100">
         <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
           {title}
         </h2>

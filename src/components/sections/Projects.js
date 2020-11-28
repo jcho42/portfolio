@@ -21,9 +21,9 @@ export default function Projects() {
         <SectionTitle>Projects</SectionTitle>
         <div>
           <div className="text-h4 flex justify-around w-120 mx-auto">
-            <h4 onClick={() => selectProject('all')}>All</h4>
-            <h4 onClick={() => selectProject('Web dev')}>Web dev</h4>
-            <h4 onClick={() => selectProject('Game dev')}>Game dev</h4>
+            <h4 className="cursor-pointer" onClick={() => selectProject('all')}>All</h4>
+            <h4 className="cursor-pointer" onClick={() => selectProject('Web dev')}>Web dev</h4>
+            <h4 className="cursor-pointer" onClick={() => selectProject('Game dev')}>Game dev</h4>
           </div>
           <div className="pt-10 flex flex-wrap justify-center">
             {projects.map(project => (
@@ -42,22 +42,25 @@ let projectArray = [
     title: 'Title',
     description: 'Description',
     tech: 'Tech/Tech/Tech',
+    type: 'Web dev',
     github: 'https://github.com/jcho42/portfolio',
     deployed: 'https://github.com/jcho42/portfolio',
   },
   {
     picture: 'project1',
     title: 'Title',
-    Description: 'Description',
+    description: 'Description',
     tech: 'Tech/Tech/Tech',
+    type: 'Web dev',
     github: 'https://github.com/jcho42/portfolio',
     deployed: 'https://github.com/jcho42/portfolio',
   },
   {
     picture: 'project1',
     title: 'Title',
-    Description: 'Description',
+    description: 'Description',
     tech: 'Tech/Tech/Tech',
+    type: 'Game dev',
     github: 'https://github.com/jcho42/portfolio',
     deployed: 'https://github.com/jcho42/portfolio',
   },

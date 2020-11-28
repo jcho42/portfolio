@@ -44,7 +44,10 @@ module.exports = {
     },
   },
   variants: {
-    display: ['hover']
+    extend: {
+      backgroundImage: ['hover'],
+    },
+    display: ['hover'],
   },
 
   // https://github.com/tailwindcss/custom-forms
