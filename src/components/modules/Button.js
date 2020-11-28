@@ -7,25 +7,26 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '', size, link }) => {
   return (
-    <button
-      type="button"
+    <a
       className={`
         ${sizes[size] || sizes.default}
         ${className}
         btn
     `}
+    href={link}
     >
       {children}
-    </button>
+    </a>
   );
 };
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  size: PropTypes.string
+  size: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default Button;

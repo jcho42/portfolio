@@ -18,7 +18,8 @@ module.exports = {
         orange: colors.orange,
       },
       backgroundImage: theme => ({
-        'black-hole': "url('../images/blackhole_interstellar_dark_mid_sat.png')"
+        'black-hole': "url('../images/blackhole_interstellar_dark_mid_sat.png')",
+        'project1': "url('../images/cat-and-human-illustration.svg')",
       }),
       flex: {
        '2': '2 2 0%',
@@ -39,11 +40,11 @@ module.exports = {
       },
       boxShadow: {
         'timeline': '0px 0px 2px 8px #fff'
-      }
+      },
     },
   },
   variants: {
-
+    display: ['hover']
   },
 
   // https://github.com/tailwindcss/custom-forms

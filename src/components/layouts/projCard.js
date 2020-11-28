@@ -1,32 +1,41 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import catAndHumanIllustration from '../../images/cat-and-human-illustration.svg';
+import Button from '../modules/Button'
 
-export default function ProjectCard() {
+export default function ProjectCard({
+  picture,
+  title,
+  description,
+  tech,
+  github,
+  deployed,
+}) {
   return (
     <div className="md:max-w-md md:flex-1/2 lg:flex-1/3">
-      <img
-        alt="Cat and human sitting on a couch"
-        className="block w-1/2 mx-auto mb-8"
-        src={catAndHumanIllustration}
-      />
-
-      <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-        Hey there! Welcome to your first Gatsby site.
-      </h2>
-
-      <p className="leading-loose">
-        This is a barebones starter for Gatsby styled using{` `}
-        <a
-          className="font-bold text-gray-900 no-underline"
-          href="https://tailwindcss.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Tailwind CSS
-        </a>
-        , a utility-first CSS framework.
-      </p>
+      <div
+        className={`md:h-80 bg-contain bg-no-repeat bg-${picture}`}
+      ></div>
+      <div className="hidden hover:block">
+        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
+          {title}
+        </h2>
+        <p className="leading-loose">{tech}</p>
+        <p className="leading-loose">{description}</p>
+        <div className="flex justify-center">
+          <Button size="lg" link={github}>Github</Button>
+          <Button size="lg" link={deployed}>Website</Button>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
+
+ProjectCard.propTypes = {
+  picture: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  tech: PropTypes.string,
+  github: PropTypes.string,
+  deployed: PropTypes.string,
+};

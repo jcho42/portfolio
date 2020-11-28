@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 export default function Landing() {
   return (
     <section
-      className="bg-black-hole bg-center bg-contain h-screen flex flex-col justify-center"
+      className="bg-black-hole bg-black bg-center bg-contain bg-no-repeat h-screen flex flex-col justify-center"
       id="home"
     >
       <div className="text-center text-white">

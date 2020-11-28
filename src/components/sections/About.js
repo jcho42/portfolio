@@ -10,10 +10,10 @@ export default function About() {
     <section className="section-offset" id="about">
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>About</SectionTitle>
-        <div className="lg:flex lg:items-center">
+        <div className="flex flex-col lg:flex-row lg:items-center">
           <div className="flex-1 px-16 mb-12 lg:mb-0">
             <img
-              alt="Cat and human sitting on a couch"
+              alt="Selfie"
               className="block w-80 mx-auto"
               src={portrait}
             />
@@ -24,7 +24,7 @@ export default function About() {
           </div>
 
           <div className="flex-2 md:px-16">
-            <h3 className="text-3xl pb-12 md:text-4xl  text-blueGray-700">Skills</h3>
+            <h3 className="text-3xl pb-12 md:text-4xl text-blueGray-700">Skills</h3>
             <div className=" flex flex-wrap">
               {[
                 {
