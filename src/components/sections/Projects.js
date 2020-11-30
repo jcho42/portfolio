@@ -20,7 +20,7 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>Projects</SectionTitle>
         <div>
-          <div className="text-h4 flex justify-around w-120 mx-auto">
+          <div className="text-h4 flex justify-around w-96 md:w-120 mx-auto">
             <h4 className="cursor-pointer" onClick={() => selectProject('all')}>
               All
             </h4>
