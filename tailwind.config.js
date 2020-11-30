@@ -19,17 +19,21 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'black-hole': "url('../images/blackhole_interstellar_dark_mid_sat.png')",
-        'project1': "url('../images/cat-and-human-illustration.svg')",
+        'gfs': "url('../images/GFS-picture.png')",
+        'pooped': "url('../images/Pooped-picture-blue-bg.jpg')",
+        'dayTripper': "url('../images/DayTripper-picture.png')"
       }),
       flex: {
        '2': '2 2 0%',
+       '100': '1 1 100%',
        '1/3': '1 1 30%',
        '1/2': '1 1 50%'
       },
       spacing: {
         '100': '27rem',
         '120': '30rem',
-        '19': '4.6rem'
+        '19': '4.6rem',
+        'full': '100%',
       },
       inset: {
         '1/10': '10%',
@@ -47,7 +51,6 @@ module.exports = {
     extend: {
       backgroundImage: ['hover'],
     },
-    display: ['hover'],
   },
 
   // https://github.com/tailwindcss/custom-forms

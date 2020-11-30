@@ -12,11 +12,11 @@
 
 /* buttons */
 .btn {
-  @apply bg-primary-default rounded text-white;
+  @apply rounded text-blueGray-700 border-2 border-orange-600;
 }
 
 .btn:hover {
-  @apply bg-primary-darker;
+  @apply bg-orange-600 text-white;
 }
 
 /* sections */

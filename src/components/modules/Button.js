@@ -14,8 +14,11 @@ const Button = ({ children, className = '', size, link }) => {
         ${sizes[size] || sizes.default}
         ${className}
         btn
+        m-3
     `}
     href={link}
+    target="_blank"
+    rel="noopener noreferrer"
     >
       {children}
     </a>
