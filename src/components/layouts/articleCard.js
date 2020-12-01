@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function ArticleCard({link, thumbnail, title, date, description}) {
   return (
-    <div className="w-80">
+    <div className="w-96">
       <a
         href={link}
         target="_blank"
@@ -15,10 +15,10 @@ export default function ArticleCard({link, thumbnail, title, date, description})
             className="block w-full"
             src={thumbnail}
           />
-          <h5>{title}</h5>
-          <p className="date">{date}</p>
-          <div className="bar"></div>
-          <div>{description}</div>
+          <h5 className="text-left text-xl md:text-2xl my-3">{title}</h5>
+          <p className="text-sm text-left">{date}</p>
+          <div className="h-1 w-1/3 my-3 bg-teal-600"></div>
+          <div className="text-left text-gray-500">{description}</div>
         </div>
       </a>
     </div>
