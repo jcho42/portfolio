@@ -39,7 +39,7 @@
 }
 
 .timeline-icon::before {
-  @apply empty-content block bg-gray-200 w-5 h-5 absolute rounded-lg -left-13.5 sm:-left-19 z-20 shadow-timeline;
+  @apply empty-content block bg-orange-600 w-5 h-5 absolute rounded-lg -left-13.5 sm:-left-19 z-20 shadow-timeline;
 }
 
 .timeline-icon::after {
