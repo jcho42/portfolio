@@ -35,13 +35,13 @@
 
 .timeline-line::after {
   @apply border-l-4 border-solid border-blueGray-700;
-  @apply absolute z-10 top-0 bottom-0 left-1/10 md:left-1/5 lg:left-1/3 empty-content;
+  @apply absolute z-10 top-0 bottom-0 left-5 sm:left-1/10 md:left-1/5 lg:left-1/3 empty-content;
 }
 
 .timeline-icon::before {
-  @apply empty-content block bg-gray-200 w-5 h-5 absolute rounded-lg -left-19 z-20 shadow-timeline;
+  @apply empty-content block bg-gray-200 w-5 h-5 absolute rounded-lg -left-13.5 sm:-left-19 z-20 shadow-timeline;
 }
 
 .timeline-icon::after {
-  @apply empty-content absolute border-t-20 border-b-20 border-solid border-t-transparent border-b-transparent border-r-20 border-teal-500 right-full;
+  @apply empty-content absolute border-t-20 border-b-20 border-solid border-t-transparent border-b-transparent border-r-20 border-teal-600 right-full;
 }
