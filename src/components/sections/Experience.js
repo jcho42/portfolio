@@ -14,7 +14,7 @@ export default function Experience() {
           {[
             {
               logo: FSALogo,
-              title: 'Software Engineer in training',
+              title: 'Student',
               company: 'Fullstack Academy',
               time: 'Aug 2020 - Oct 2020'
             },

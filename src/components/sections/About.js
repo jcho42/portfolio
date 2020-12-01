@@ -14,7 +14,7 @@ export default function About() {
           <div className="flex-1 px-16 mb-12 lg:mb-0">
             <img
               alt="Selfie"
-              className="block w-80 mx-auto"
+              className="block w-64 mx-auto"
               src={portrait}
             />
             <h3 className="text-xl md:text-2xl  text-blueGray-700 my-5 font-bold">Who am I?</h3>
