@@ -22,7 +22,12 @@ export default function Contact() {
         <div className="border-t-4 border-gray-100 w-16 mx-auto mt-4 mb-10"></div>
         <div className="mb-10">Have any questions?</div>
         <div className="flex justify-center">
-          <form className="flex flex-col w-120 mx-10 text-gray-200">
+          <form
+            name="portfolio-contact"
+            method="POST"
+            data-netlify="true"
+            className="flex flex-col w-120 mx-10 text-gray-200"
+          >
             <input
               className="px-3 py-2 mb-0.5 bg-gray-800"
               type="text"
@@ -43,9 +48,8 @@ export default function Contact() {
               name="message"
               placeholder="Your message"
             ></textarea>
-            <div className="flex justify-between">
-              <div>Success message</div>
-              <button className="px-9 py-2 border-2 border-gray-400">
+            <div className="flex justify-end">
+              <button type="submit" className="px-9 py-2 w-32 border-2 border-gray-400">
                 Submit
               </button>
             </div>
