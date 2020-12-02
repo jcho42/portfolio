@@ -29,6 +29,7 @@ export default function Contact() {
             data-netlify-honeypot="bot-field"
             className="flex flex-col w-120 mx-10 text-gray-200"
           >
+            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="portfolio-contact" />
             <input
               className="px-3 py-2 mb-0.5 bg-gray-800"
