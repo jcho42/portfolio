@@ -67,7 +67,7 @@ export default function Projects() {
 
 let projectArray = [
   {
-    picture: 'dayTripper',
+    picture: 'bg-dayTripper',
     title: 'DayTripper',
     description:
       'A mobile application that allows for easy trip planning with your friends or family.',
@@ -78,7 +78,7 @@ let projectArray = [
     deployedType: 'Demo',
   },
   {
-    picture: 'pooped',
+    picture: 'bg-pooped',
     title: 'Pooped',
     description:
       'A simple mobile application that helps to keep track of your bowel movements.',
@@ -89,7 +89,7 @@ let projectArray = [
     deplyedType: null,
   },
   {
-    picture: 'gfs',
+    picture: 'bg-gfs',
     title: "Grace's Fruity Seeds",
     description: 'A basic e-commerce website that sells fruit seeds.',
     tech: 'React/Redux/Express/Postgres',
