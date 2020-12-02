@@ -26,7 +26,7 @@ export default function Landing() {
             duration={500}
             className="cursor-pointer border-white border-2 p-5 hover:bg-teal-700 flex items-center"
           >
-            <div className="px-5">View Portfolio</div>
+            <span className="px-5">View Portfolio</span>
             <FaArrowRight />
           </Link>
         </p>

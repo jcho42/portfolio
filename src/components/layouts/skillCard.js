@@ -19,7 +19,7 @@ export default function SkillCard({ icon, skill, description }) {
 }
 
 SkillCard.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.node,
   skill: PropTypes.string,
   description: PropTypes.string,
 };
