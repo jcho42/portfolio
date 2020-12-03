@@ -15,22 +15,25 @@ export default function Experience() {
             {
               logo: FSALogo,
               title: 'Student',
+              info: 'Full-stack Web Development',
               company: 'Fullstack Academy',
               time: 'Aug 2020 - Oct 2020'
             },
             {
               logo: QuestLogo,
               title: 'Medical Technologist II',
+              info: 'LC-MS/MS',
               company: 'Quest Diagnostics',
               time: 'Aug 2015 - Jul 2020'
             },
             {
               logo: UICLogo,
               title: 'Student',
+              info: 'Biochemistry',
               company: 'University of Illinois at Chicago',
               time: 'Aug 2010 - May 2014'
             },
-          ].map(card => <ExpCard key={card.company} logo={card.logo} title={card.title} company={card.company} time={card.time} />)}
+          ].map(card => <ExpCard key={card.company} logo={card.logo} title={card.title} info={card.info} company={card.company} time={card.time} />)}
         </div>
       </div>
     </section>
