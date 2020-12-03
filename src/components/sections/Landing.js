@@ -24,7 +24,7 @@ export default function Landing() {
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer border-white border-2 p-5 hover:bg-teal-700 flex items-center"
+            className="cursor-pointer border-white border-2 p-5 transition duration-500 ease-in-out hover:bg-teal-700 hover:border-teal-700 flex items-center"
           >
             <span className="px-5">View Portfolio</span>
             <FaArrowRight />

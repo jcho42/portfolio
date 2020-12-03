@@ -21,7 +21,7 @@ const Footer = () => {
       </Link>
       <nav className="max-w-md p-4 mx-auto text-sm md:p-6">
         <div className="flex justify-center">
-          <SocialIcon link="https://github.com/jcho42/portfolio">
+          <SocialIcon link="https://github.com/jcho42">
             <FaGithub />
           </SocialIcon>
           <SocialIcon link="https://www.linkedin.com/in/jcho42/">
