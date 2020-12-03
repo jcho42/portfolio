@@ -15,9 +15,11 @@
     "react": "16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "16.14.0",
+    "react-flip-move": "^3.0.4",
     "react-helmet": "6.1.0",
     "react-icons": "^3.11.0",
     "react-scroll": "^1.8.1",
+    "react-shuffle": "^2.1.0",
     "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "keywords": [

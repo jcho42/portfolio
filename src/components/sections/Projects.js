@@ -1,17 +1,42 @@
 import React, { useState } from 'react';
+import FlipMove from 'react-flip-move';
 
 import { SectionTitle, ProjectCard } from '../layouts';
-import constructionPic from '../../images/construction-icon.png'
+import constructionPic from '../../images/construction-icon.png';
 
 export default function Projects() {
   const [projects, setProjects] = useState(projectArray);
+  const [allActive, setAllActive] = useState('proj-active');
+  const [webActive, setWebActive] = useState('');
+  const [mobileActive, setMobileActive] = useState('');
+  const [gameActive, setGameActive] = useState('');
 
   const selectProject = (type) => {
     let projects = projectArray;
     if (type === 'Web dev') {
       projects = projectArray.filter((project) => project.type === type);
-    } else if (type === 'Game dev')
+      setAllActive('');
+      setWebActive('proj-active');
+      setMobileActive('');
+      setGameActive('');
+    } else if (type === 'Game dev') {
       [(projects = projectArray.filter((project) => project.type === type))];
+      setAllActive('');
+      setWebActive('');
+      setMobileActive('');
+      setGameActive('proj-active');
+    } else if (type === 'Mobile dev') {
+      [(projects = projectArray.filter((project) => project.type === type))];
+      setAllActive('');
+      setWebActive('');
+      setMobileActive('proj-active');
+      setGameActive('');
+    } else {
+      setAllActive('proj-active');
+      setWebActive('');
+      setMobileActive('');
+      setGameActive('');
+    }
     setProjects(projects);
   };
 
@@ -21,24 +46,33 @@ export default function Projects() {
         <SectionTitle>Projects</SectionTitle>
         <div>
           <div className="text-h4 flex justify-around w-96 md:w-120 mx-auto">
-            <h4 className="cursor-pointer" onClick={() => selectProject('all')}>
+            <h4
+              className={`flex-1/3 py-1 cursor-pointer transition duration-500 ease-in-out ${allActive}`}
+              onClick={() => selectProject('all')}
+            >
               All
             </h4>
             <h4
-              className="cursor-pointer"
+              className={`flex-1/3 py-1 cursor-pointer transition duration-500 ease-in-out ${webActive}`}
               onClick={() => selectProject('Web dev')}
             >
-              Web dev
+              Web
             </h4>
             <h4
-              className="cursor-pointer"
+              className={`flex-1/3 py-1 cursor-pointer transition duration-500 ease-in-out ${mobileActive}`}
+              onClick={() => selectProject('Mobile dev')}
+            >
+              Mobile
+            </h4>
+            <h4
+              className={`flex-1/3 py-1 cursor-pointer transition duration-500 ease-in-out ${gameActive}`}
               onClick={() => selectProject('Game dev')}
             >
-              Game dev
+              Game
             </h4>
           </div>
           {projects.length ? (
-            <div className="pt-10 flex flex-wrap justify-center">
+            <FlipMove className="pt-10 flex flex-wrap justify-center">
               {projects.map((project) => (
                 <ProjectCard
                   key={project.title}
@@ -52,7 +86,7 @@ export default function Projects() {
                   deployedType={project.deployedType}
                 />
               ))}
-            </div>
+            </FlipMove>
           ) : (
             <div className="text-3xl mt-20 flex justify-center items-center">
               <img src={constructionPic} className="w-40" />
@@ -72,7 +106,7 @@ let projectArray = [
     description:
       'A mobile application that allows for easy trip planning with your friends or family.',
     tech: 'React Native/Express/Postgres',
-    type: 'Web dev',
+    type: 'Mobile dev',
     github: 'https://github.com/800080/Day_Tripper',
     deployed: 'https://www.youtube.com/watch?v=Z5ZOcTYYH1A',
     deployedType: 'Demo',
@@ -83,7 +117,7 @@ let projectArray = [
     description:
       'A simple mobile application that helps to keep track of your bowel movements.',
     tech: 'React Native/FireStore',
-    type: 'Web dev',
+    type: 'Mobile dev',
     github: 'https://github.com/jcho42/pooped',
     deployed: null,
     deplyedType: null,

@@ -45,3 +45,8 @@
 .timeline-icon::after {
   @apply empty-content absolute border-t-20 border-b-20 border-solid border-t-transparent border-b-transparent border-r-20 border-teal-600 right-full;
 }
+
+/* Project type active background */
+.proj-active {
+  @apply bg-orange-600 text-white;
+}
