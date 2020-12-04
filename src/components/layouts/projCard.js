@@ -16,8 +16,8 @@ const ProjectCard = forwardRef(({
   return (
     <div ref={ref} className="relative flex-100 max-w-md md:flex-1/2 lg:flex-1/3">
       <div className="mt-full"></div>
-      <div className={`absolute inset-0 ${picture} bg-contain bg-no-repeat hover:bg-none`}>
-        <div className="h-full flex flex-col justify-center p-5 opacity-0 hover:opacity-100">
+      <div className={`absolute inset-0 ${picture} bg-contain bg-no-repeat hover:bg-gray-pic transition-backgroundImage duration-500 ease-in-out`}>
+        <div className="h-full flex flex-col justify-center p-5 opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
           <h2 className="inline-block p-3 pb-0 text-2xl md:text-3xl font-bold">
             {title}
           </h2>

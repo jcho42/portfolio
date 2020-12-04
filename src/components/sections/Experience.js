@@ -14,7 +14,7 @@ export default function Experience() {
           {[
             {
               logo: FSALogo,
-              title: 'Student',
+              title: '',
               info: 'Full-stack Web Development',
               company: 'Fullstack Academy',
               time: 'Aug 2020 - Oct 2020'
@@ -28,7 +28,7 @@ export default function Experience() {
             },
             {
               logo: UICLogo,
-              title: 'Student',
+              title: '',
               info: 'Biochemistry',
               company: 'University of Illinois at Chicago',
               time: 'Aug 2010 - May 2014'

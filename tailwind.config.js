@@ -21,7 +21,8 @@ module.exports = {
         'black-hole': "url('../images/blackhole_interstellar_dark_mid_sat.png')",
         'gfs': "url('../images/GFS-picture.png')",
         'pooped': "url('../images/Pooped-picture-blue-bg.jpg')",
-        'dayTripper': "url('../images/DayTripper-picture.png')"
+        'dayTripper': "url('../images/DayTripper-picture.png')",
+        'gray-pic': "url('../images/gray-picture.png')",
       }),
       flex: {
        '2': '2 2 0%',
@@ -48,11 +49,15 @@ module.exports = {
       boxShadow: {
         'timeline': '0px 0px 2px 8px #fff'
       },
+      transitionProperty: {
+        'backgroundImage': 'background-image'
+       },
     },
   },
   variants: {
     extend: {
       backgroundImage: ['hover'],
+      zIndex: ['hover'],
     },
   },
 

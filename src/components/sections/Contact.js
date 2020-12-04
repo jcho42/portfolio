@@ -52,7 +52,7 @@ export default function Contact() {
               placeholder="Your message"
             ></textarea>
             <div className="flex justify-end">
-              <button type="submit" className="px-9 py-2 w-32 border-2 border-gray-400">
+              <button type="submit" className="px-9 py-2 w-32 border-2 border-gray-400 hover:border-teal-600 hover:bg-teal-600 transition duration-500 ease-in-out">
                 Submit
               </button>
             </div>
