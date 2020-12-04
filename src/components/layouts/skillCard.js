@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import SkillIcon from './skillIcon';
 
@@ -10,10 +11,10 @@ export default function SkillCard({ icon, skill, description }) {
         <SkillIcon>{icon}</SkillIcon>
       </div>
 
-      <div>
+      <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" offset={100} delay={500}>
         <h4 className="text-h4 font-bold">{skill}</h4>
         <p className="text-sm md:text-base">{description}</p>
-      </div>
+      </ScrollAnimation>
     </div>
   );
 }

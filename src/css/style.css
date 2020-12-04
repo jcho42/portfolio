@@ -25,7 +25,7 @@
 }
 
 .section-underline {
-  @apply border-t-4 border-blueGray-700 w-16 mx-auto mt-4 mb-16;
+  @apply border-t-4 border-blueGray-700 w-16 mt-4 mb-16;
 }
 
 /* timeline */

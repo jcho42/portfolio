@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import portrait from '../../images/IMG_2457 (1).jpg';
 import { FaReact, FaNodeJs, FaCoffee } from 'react-icons/fa';
@@ -11,7 +12,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>About</SectionTitle>
         <div className="flex flex-col lg:flex-row lg:items-center">
-          <div className="flex-1 px-16 mb-12 lg:mb-0">
+          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true" offset={300} className="flex-1 px-16 mb-12 lg:mb-0">
             <img
               alt="Selfie"
               className="block w-64 mx-auto"
@@ -21,9 +22,9 @@ export default function About() {
             <p className="leading-loose">
               {`I'm a full-stack web developer in Chicago, IL. I have a passion for amazing UI and problem solving to create a great user experience. On my free time, I like to play video games, watch sci-fi movies, and observe the vast universe with my telescope.`}
             </p>
-          </div>
+          </ScrollAnimation>
 
-          <div className="flex-2 md:px-16">
+          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true" offset={300}  className="flex-2 md:px-16">
             <h3 className="text-3xl pb-12 md:text-4xl text-blueGray-700">Skills</h3>
             <div className=" flex flex-wrap">
               {[
@@ -51,7 +52,7 @@ export default function About() {
                 <SkillCard key={card.skill} icon={card.icon} skill={card.skill} description={card.description} />
               ))}
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
