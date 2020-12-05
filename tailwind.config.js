@@ -50,7 +50,8 @@ module.exports = {
         'timeline': '0px 0px 2px 8px #fff'
       },
       transitionProperty: {
-        'backgroundImage': 'background-image'
+        'backgroundImage': 'background-image',
+        'justifyContent': 'justify-content',
        },
     },
   },
@@ -58,6 +59,7 @@ module.exports = {
     extend: {
       backgroundImage: ['hover'],
       zIndex: ['hover'],
+      justifyContent: ['hover'],
     },
   },
 

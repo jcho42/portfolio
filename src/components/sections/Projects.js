@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FlipMove from 'react-flip-move';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { SectionTitle, ProjectCard } from '../layouts';
 import constructionPic from '../../images/construction-icon.png';
@@ -45,7 +46,7 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>Projects</SectionTitle>
         <div>
-          <div className="text-h4 flex justify-around w-96 md:w-120 mx-auto">
+          <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" className="text-h4 flex justify-around w-96 md:w-120 mx-auto">
             <h4
               className={`flex-1/3 py-1 cursor-pointer transition duration-500 ease-in-out ${allActive}`}
               onClick={() => selectProject('all')}
@@ -70,10 +71,10 @@ export default function Projects() {
             >
               Game
             </h4>
-          </div>
+          </ScrollAnimation>
           {projects.length ? (
             <FlipMove className="pt-10 flex flex-wrap justify-center">
-              {projects.map((project) => (
+              {projects.map((project, index) => (
                 <ProjectCard
                   key={project.title}
                   picture={project.picture}
@@ -84,6 +85,7 @@ export default function Projects() {
                   github={project.github}
                   deployed={project.deployed}
                   deployedType={project.deployedType}
+                  delay={index}
                 />
               ))}
             </FlipMove>
@@ -110,6 +112,7 @@ let projectArray = [
     github: 'https://github.com/800080/Day_Tripper',
     deployed: 'https://www.youtube.com/watch?v=Z5ZOcTYYH1A',
     deployedType: 'Demo',
+    delay: 0,
   },
   {
     picture: 'bg-pooped',
@@ -121,6 +124,7 @@ let projectArray = [
     github: 'https://github.com/jcho42/pooped',
     deployed: null,
     deplyedType: null,
+    delay: 100,
   },
   {
     picture: 'bg-gfs',
@@ -131,5 +135,6 @@ let projectArray = [
     github: 'https://github.com/fruitByTheForLoops/GraceFlopper',
     deployed: 'http://gfseeds.herokuapp.com/',
     deployedType: 'Web site',
+    delay: 200,
   },
 ];
