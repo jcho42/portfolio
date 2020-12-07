@@ -11,7 +11,7 @@ export default function Experience() {
     <section className="section-offset" id="experience">
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>Experience</SectionTitle>
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" className="timeline-line py-1 sm:mx-10">
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} className="timeline-line py-1 sm:mx-10">
           {[
             {
               logo: FSALogo,

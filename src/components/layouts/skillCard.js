@@ -11,7 +11,7 @@ export default function SkillCard({ icon, skill, description }) {
         <SkillIcon>{icon}</SkillIcon>
       </div>
 
-      <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" offset={100} delay={500}>
+      <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} offset={100} delay={500}>
         <h4 className="text-h4 font-bold">{skill}</h4>
         <p className="text-sm md:text-base">{description}</p>
       </ScrollAnimation>

@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function ExpCard({logo, title, info, company, time}) {
   return (
-    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true" className="md:w-2/3 lg:w-1/2 left-5.5 sm:left-1/10 md:left-1/5 lg:left-1/3 relative mx-12 mr-10 sm:mx-17 my-10">
+    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} className="md:w-2/3 lg:w-1/2 left-5.5 sm:left-1/10 md:left-1/5 lg:left-1/3 relative mx-12 mr-10 sm:mx-17 my-10">
       <div className="timeline-icon bg-teal-600 flex items-center md:pl-20">
         <img
           alt="Exp card logo"

@@ -46,7 +46,7 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>Projects</SectionTitle>
         <div>
-          <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" className="text-h4 flex justify-around w-96 md:w-120 mx-auto">
+          <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} className="text-h4 flex justify-around w-96 md:w-120 mx-auto">
             <h4
               className={`flex-1/3 py-1 cursor-pointer transition duration-500 ease-in-out ${allActive}`}
               onClick={() => selectProject('all')}

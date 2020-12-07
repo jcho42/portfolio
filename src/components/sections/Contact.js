@@ -1,9 +1,11 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 export default function Contact() {
   return (
     <section
-      className="text-center py-40 bg-blueGray-700 relative"
+      className="text-center pt-40 pb-20 bg-blueGray-700 relative"
       id="contact"
     >
       <svg
@@ -17,11 +19,11 @@ export default function Contact() {
       >
         <path d="M0 0 L50 100 L100 0 Z" fill="#f3f4f6" stroke="white"></path>
       </svg>
-      <div className="mx-auto max-w-6xl py-8 md:py-16 text-gray-100">
-        <h2 className="text-4xl md:text-5xl">Contact</h2>
-        <div className="border-t-4 border-gray-100 w-16 mx-auto mt-4 mb-10"></div>
-        <div className="mb-10">Have any questions?</div>
-        <div className="flex justify-center">
+      <div className="flex flex-col items-center mx-auto max-w-6xl py-8 md:py-16 text-gray-100">
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="text-4xl md:text-5xl">Contact</ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="border-t-4 border-gray-100 w-16 mx-auto mt-4 mb-10"></ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="mb-10">Have any questions?</ScrollAnimation>
+        <ScrollAnimation animateIn="animate__bounceIn" animateOnce={true} className="flex justify-center">
           <form
             name="portfolio-contact"
             method="POST"
@@ -57,7 +59,7 @@ export default function Contact() {
               </button>
             </div>
           </form>
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

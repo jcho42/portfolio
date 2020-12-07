@@ -16,7 +16,7 @@ const ProjectCard = forwardRef(({
   delay,
 }, ref) => {
   return (
-    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay={delay * 100} offset={250} ref={ref} className="relative flex-100 max-w-md md:flex-1/2 lg:flex-1/3">
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} delay={delay * 100} offset={250} ref={ref} className="relative flex-100 max-w-md md:flex-1/2 lg:flex-1/3">
       <div className="mt-full"></div>
       <div className={`absolute inset-0 ${picture} bg-contain bg-no-repeat hover:bg-gray-pic transition-backgroundImage duration-500 ease-in-out`}>
         <div className="h-full flex flex-col p-5 opacity-0 justify-center hover:opacity-100 my-auto transition duration-500 ease-in-out">

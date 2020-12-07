@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function ArticleCard({link, thumbnail, title, date, description}) {
   return (
-    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" className="w-96">
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} className="w-96">
       <a
         href={link}
         target="_blank"

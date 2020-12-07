@@ -12,7 +12,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>About</SectionTitle>
         <div className="flex flex-col lg:flex-row lg:items-center">
-          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true" offset={300} className="flex-1 px-16 mb-12 lg:mb-0">
+          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} offset={300} className="flex-1 px-16 mb-12 lg:mb-0">
             <img
               alt="Selfie"
               className="block w-64 mx-auto"
@@ -24,7 +24,7 @@ export default function About() {
             </p>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true" offset={300}  className="flex-2 md:px-16">
+          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} offset={300}  className="flex-2 md:px-16">
             <h3 className="text-3xl pb-12 md:text-4xl text-blueGray-700">Skills</h3>
             <div className=" flex flex-wrap">
               {[
