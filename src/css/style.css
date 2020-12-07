@@ -50,3 +50,8 @@
 .proj-active {
   @apply bg-orange-600 text-white;
 }
+
+/* header active text color change */
+.active {
+  @apply text-orange-600;
+}

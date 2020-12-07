@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <div>
       <Seo
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`Jason`, `Cho`, `React`, `Gatsby`, `Tailwind`]}
         title="Jason Cho"
       />
       <Landing />
