@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { SectionTitle, ExpCard } from '../layouts';
 import FSALogo from '../../images/FSA logo.jpg'
@@ -10,7 +11,7 @@ export default function Experience() {
     <section className="section-offset" id="experience">
       <div className="mx-auto max-w-6xl py-8 md:py-16">
         <SectionTitle>Experience</SectionTitle>
-        <div className="timeline-line py-1 sm:mx-10">
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" className="timeline-line py-1 sm:mx-10">
           {[
             {
               logo: FSALogo,
@@ -34,7 +35,7 @@ export default function Experience() {
               time: 'Aug 2010 - May 2014'
             },
           ].map(card => <ExpCard key={card.company} logo={card.logo} title={card.title} info={card.info} company={card.company} time={card.time} />)}
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   );
