@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function ArticleCard({link, thumbnail, title, date, description}) {
   return (
-    <div className="w-96">
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" className="w-96">
       <a
         href={link}
         target="_blank"
@@ -21,7 +22,7 @@ export default function ArticleCard({link, thumbnail, title, date, description})
           <div className="text-left text-gray-500">{description}</div>
         </div>
       </a>
-    </div>
+    </ScrollAnimation>
   );
 }
 
