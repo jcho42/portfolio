@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="py-10 bg-gray-800 relative">
       <Link to="home" spy={true} smooth={true} duration={500}>
         <div className="flex justify-center">
-          <div className="bg-orange-600 p-2 cursor-pointer -top-9 absolute">
+          <div className="bg-orange-600 border-2 border-orange-600 p-2 cursor-pointer -top-9 absolute bg-opacity-30 hover:bg-opacity-100 transition duration-500 ease-in-out">
             <IconContext.Provider value={{ color: 'white', size: '3em' }}>
               <CgChevronDoubleUp />
             </IconContext.Provider>

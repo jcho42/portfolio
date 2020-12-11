@@ -6,7 +6,7 @@ export default function SocialIcon({link, children}) {
   return (
     <a href={link} target="_blank"
     rel="noopener noreferrer">
-      <div className="bg-gray-700 p-3 mx-3">
+      <div className="bg-gray-700 p-3 mx-3 hover:bg-orange-600 transition duration-500 ease-in-out">
         <IconContext.Provider value={{ color: 'white', size: '2em' }}>
           {children}
         </IconContext.Provider>

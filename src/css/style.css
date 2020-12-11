@@ -12,7 +12,7 @@
 
 /* buttons */
 .btn {
-  @apply rounded text-blueGray-700 border-2 border-orange-600;
+  @apply text-blueGray-700 border-2 border-orange-600;
 }
 
 .btn:hover {
