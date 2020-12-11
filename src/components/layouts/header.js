@@ -7,8 +7,8 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-blueGray-700 border-b-4 border-b-teal-500 sticky top-0 z-50">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
+    <header className="bg-blueGray-700 border-b-4 border-b-teal-500 sticky top-0 z-50 bg-opacity-95">
+      <div className="flex flex-wrap items-center justify-between max-w-4xl p-2 mx-auto">
         <Link to="home" spy={true} smooth={true} duration={500}>
           <img src={endurance} className="w-10 cursor-pointer">
           </img>
