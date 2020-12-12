@@ -22,7 +22,7 @@ export default function Contact() {
       <div className="flex flex-col mx-auto max-w-6xl py-8 md:py-16 text-gray-100">
         <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="mx-auto text-4xl md:text-5xl">Contact</ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="border-t-4 border-gray-100 w-16 mx-auto mt-4 mb-10"></ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="mb-10 mx-auto">Have any questions?</ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} className="mb-10 mx-auto">Feel free to reach out!</ScrollAnimation>
         <ScrollAnimation animateIn="animate__bounceIn" animateOnce={true} className="flex justify-center">
           <form
             name="portfolio-contact"
