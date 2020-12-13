@@ -15,6 +15,7 @@ export default function Experience() {
           {[
             {
               logo: FSALogo,
+              link: 'https://www.fullstackacademy.com/',
               title: '',
               info: 'Full-stack Web Development',
               company: 'Fullstack Academy',
@@ -22,6 +23,7 @@ export default function Experience() {
             },
             {
               logo: QuestLogo,
+              link: 'https://www.questdiagnostics.com/home/',
               title: 'Medical Technologist II',
               info: 'LC-MS/MS',
               company: 'Quest Diagnostics',
@@ -29,12 +31,13 @@ export default function Experience() {
             },
             {
               logo: UICLogo,
+              link: 'https://www.uic.edu/',
               title: '',
               info: 'Biochemistry',
               company: 'University of Illinois at Chicago',
               time: 'Aug 2010 - May 2014'
             },
-          ].map(card => <ExpCard key={card.company} logo={card.logo} title={card.title} info={card.info} company={card.company} time={card.time} />)}
+          ].map(card => <ExpCard key={card.company} logo={card.logo} link={card.link} title={card.title} info={card.info} company={card.company} time={card.time} />)}
         </ScrollAnimation>
       </div>
     </section>
