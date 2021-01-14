@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "portfolio",
+  "description": "Jason's Portfolio styled with Tailwind",
   "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Jason Cho",
   "dependencies": {
     "animate.css": "^4.1.1",
     "gatsby": "2.25.3",
