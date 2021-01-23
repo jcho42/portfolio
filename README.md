@@ -1,3 +1,5 @@
 # Web Developer Portfolio
 
-Devloped using Gatsby and Tailwind. Deployed to Netlify.
+Developed using Gatsby, Tailwind and deployed to Netlify.
+
+Checkout the website: [Portfolio](https://jasonjcho.com/)
