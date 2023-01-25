@@ -14,10 +14,10 @@ export default function Landing() {
           {"Hi, I'm Jason Cho"}
         </h1>
         <p className="text-2xl lg:text-3xl mt-6 font-light">
-          Full-stack web developer
+          Software Engineer
         </p>
-        <p className="text-2xl lg:text-3xl font-light">Video game enthusiast</p>
-        <p className="text-2xl lg:text-3xl font-light">Amateur astronomer</p>
+        <p className="text-2xl lg:text-3xl font-light">Video Game Enthusiast</p>
+        <p className="text-2xl lg:text-3xl font-light">Amateur Astronomer</p>
         <p className="mt-8 md:mt-12 flex justify-center">
           <Link
             to="about"

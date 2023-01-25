@@ -20,7 +20,7 @@ export default function About() {
             />
             <h3 className="text-xl md:text-2xl  text-blueGray-700 my-5 font-bold">Who am I?</h3>
             <p className="leading-loose">
-              {`I'm a full-stack web developer in Chicago, IL. I have a passion for amazing UI and problem solving to create a great user experience. On my free time, I like to play video games, watch sci-fi movies, and observe the vast universe with my telescope.`}
+              {`I'm a software engineer in Boulder, CO. I have a passion for amazing UI and problem solving to create a great user experience. On my free time, I like to play video games, watch sci-fi movies, and observe the vast universe with my telescope.`}
             </p>
           </ScrollAnimation>
 
@@ -36,7 +36,7 @@ export default function About() {
                 {
                   icon: <FaNodeJs />,
                   skill: "Back End",
-                  description: "Node, Express, Sequelize, PostgreSQL, Firebase/FireStore"
+                  description: "Java, Node, Express, Sequelize, PostgreSQL, Firebase/FireStore"
                 },
                 {
                   icon: <FaCoffee />,

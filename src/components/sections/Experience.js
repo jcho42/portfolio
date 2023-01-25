@@ -5,6 +5,7 @@ import { SectionTitle, ExpCard } from '../layouts';
 import FSALogo from '../../images/FSA logo.jpg'
 import QuestLogo from '../../images/QD-logo.jpeg'
 import UICLogo from '../../images/UIC-logo.png'
+import GoogleLogo from '../../images/Google Logo.png'
 
 export default function Experience() {
   return (
@@ -13,6 +14,14 @@ export default function Experience() {
         <SectionTitle>Experience</SectionTitle>
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} className="timeline-line py-1 sm:mx-10">
           {[
+            {
+              logo: GoogleLogo,
+              link: 'https://www.fullstackacademy.com/',
+              title: '',
+              info: 'Software Engineer L3',
+              company: 'Google',
+              time: 'Jan 2022 - Jan 2023'
+            },
             {
               logo: FSALogo,
               link: 'https://www.fullstackacademy.com/',
